@@ -29,7 +29,7 @@
         "test": "grunt test"
     },
     "devDependencies": {
-        "grunt-contrib-jshint": "^0.9.2",
+        "grunt-contrib-jshint": "^0.10.0",
         "grunt-contrib-copy": "^0.5.0",
         "grunt-contrib-nodeunit": "^0.3.3",
         "grunt-complexity": "~0.1.51",
