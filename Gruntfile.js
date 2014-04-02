@@ -45,7 +45,7 @@ module.exports = function exports(grunt) {
     grunt.loadNpmTasks('grunt-contrib-nodeunit');
     grunt.loadNpmTasks('grunt-complexity');
 
-    grunt.registerTask('test', ['nodeunit']);
-    grunt.registerTask('default', ['jshint', 'test', 'complexity']);
+    grunt.registerTask('test', ['jshint', 'nodeunit', 'complexity']);
+    grunt.registerTask('default', ['test']);
 
 };
