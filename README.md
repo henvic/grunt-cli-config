@@ -1,4 +1,4 @@
-# grunt-cli-config [![Build Status](https://secure.travis-ci.org/henvic/grunt-cli-config.png?branch=master)](https://travis-ci.org/henvic/grunt-cli-config) [![NPM version](https://badge.fury.io/js/grunt-cli-config.png)](http://badge.fury.io/js/grunt-cli-config) [![Dependency Status](https://david-dm.org/henvic/grunt-cli-config.png)](https://david-dm.org/henvic/grunt-cli-config)
+# grunt-cli-config [![Build Status](https://secure.travis-ci.org/henvic/grunt-cli-config.png?branch=master)](https://travis-ci.org/henvic/grunt-cli-config) [![NPM version](https://badge.fury.io/js/grunt-cli-config.png)](http://badge.fury.io/js/grunt-cli-config) [![Dependency Status](https://david-dm.org/henvic/grunt-cli-config.png)](https://david-dm.org/henvic/grunt-cli-config) [![Coverage Status](https://coveralls.io/repos/henvic/grunt-cli-config/badge.png)](https://coveralls.io/r/henvic/grunt-cli-config)
 
 # Install
 This plugin extends grunt to allow you to overwrite your grunt config options by invoking parameters on the command-line interface (CLI).
