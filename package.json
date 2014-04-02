@@ -1,0 +1,44 @@
+{
+    "name": "grunt-cli-config",
+    "description": "Set the config with the options passed on the CLI.",
+    "version": "0.1.0",
+    "homepage": "https://github.com/henvic/grunt-cli-config",
+    "author": {
+        "name": "Henrique Vicente",
+        "email": "henriquevicente@gmail.com",
+        "url": "http://henvic.github.io/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/henvic/grunt-cli-config.git"
+    },
+    "bugs": {
+        "url": "https://github.com/henvic/grunt-cli-config/issues"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/henvic/grunt-cli-config/blob/master/LICENSE-MIT"
+        }
+    ],
+    "engines": {
+        "node": ">= 0.8.0"
+    },
+    "main": "./tasks/config_options.js",
+    "scripts": {
+        "test": "grunt test"
+    },
+    "devDependencies": {
+        "grunt-contrib-jshint": "^0.9.2",
+        "grunt-contrib-copy": "^0.5.0",
+        "grunt-contrib-nodeunit": "^0.3.3",
+        "grunt-complexity": "~0.1.51",
+        "grunt": "~0.4.4"
+    },
+    "peerDependencies": {
+        "grunt": "~0.4.4"
+    },
+    "keywords": [
+        "gruntplugin"
+    ]
+}
