@@ -44,7 +44,6 @@ module.exports = function exports(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-nodeunit');
     grunt.loadNpmTasks('grunt-complexity');
-    grunt.loadNpmTasks('grunt-env');
 
     grunt.registerTask('test', ['nodeunit']);
     grunt.registerTask('default', ['jshint', 'test', 'complexity']);
