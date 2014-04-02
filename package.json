@@ -27,7 +27,7 @@
     "main": "index.js",
     "scripts": {
         "test": "grunt test",
-        "coveralls": "jscoverage tasks && GRUNT_CLI_CONFIG_CODE_COVERAGE=1 nodeunit --reporter=lcov test | coveralls"
+        "coveralls": "node_modules/jscoverage/bin/jscoverage tasks && GRUNT_CLI_CONFIG_CODE_COVERAGE=1 nodeunit --reporter=lcov test | node_modules/coveralls/bin/coveralls.js"
     },
     "devDependencies": {
         "grunt-contrib-jshint": "^0.10.0",
