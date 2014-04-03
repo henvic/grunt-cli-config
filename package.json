@@ -1,7 +1,7 @@
 {
     "name": "grunt-cli-config",
     "description": "Set the config with the options passed on the CLI.",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "homepage": "https://github.com/henvic/grunt-cli-config",
     "author": {
         "name": "Henrique Vicente",
