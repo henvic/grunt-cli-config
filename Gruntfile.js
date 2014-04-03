@@ -10,6 +10,19 @@
 
 module.exports = function exports(grunt) {
     grunt.initConfig({
+        bump: {
+            options: {
+                commit: true,
+                commitFiles: ['package.json'],
+                commitMessage: 'Release v%VERSION%',
+                createTag: true,
+                files: ['package.json'],
+                push: true,
+                pushTo: 'origin',
+                tagMessage: '',
+                tagName: 'v%VERSION%'
+            }
+        },
         jshint: {
             all: [
                 'Gruntfile.js',
@@ -41,6 +54,7 @@ module.exports = function exports(grunt) {
 
     grunt.loadTasks('tasks');
 
+    grunt.loadNpmTasks('grunt-bump');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-nodeunit');
