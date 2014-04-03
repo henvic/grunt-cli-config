@@ -1,7 +1,7 @@
 'use strict';
 
 var grunt = require('grunt'),
-    configOptions = require(__dirname + '/../tasks/config_options')(grunt),
+    configOptions = require(__dirname + '/../index')(grunt),
     originalFlags;
 
 //normally we would load the plugin with .grunt.loadNpmTasks('grunt-cli-config');
