@@ -2,7 +2,7 @@
 
 module.exports = function exports() {
     var path,
-        params = [];
+        params = [].slice.call(arguments);
 
     if (process.env.GRUNT_CLI_CONFIG_CODE_COVERAGE) {
         path = __dirname + '/tasks-cov/config_options';
@@ -10,8 +10,7 @@ module.exports = function exports() {
         path = __dirname + '/tasks/config_options';
     }
 
-    params.push(path);
-    params.push(arguments);
+    params.unshift(path);
 
-    require.apply(this, params);
+    return require.apply(this, params);
 };
