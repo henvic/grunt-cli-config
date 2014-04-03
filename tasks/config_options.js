@@ -49,8 +49,6 @@ module.exports = function exports(grunt) {
         var options = grunt.option.flags(),
             params = [].slice.call(arguments);
 
-        params.shift();
-
         options.forEach(function getOption(option) {
             var choice = parse(normalize(option)),
                 key = params;
