@@ -4,6 +4,9 @@ var grunt = require('grunt'),
     configOptions = require(__dirname + '/../tasks/config_options')(grunt),
     originalFlags;
 
+//normally we would load the plugin with .grunt.loadNpmTasks('grunt-cli-config');
+//but we load it this way here so we can have access to the normalize and parse methods
+
 exports.config_options = {
     setUp: function setUp(done) {
         originalFlags = grunt.option.flags();

@@ -5,9 +5,9 @@ This plugin extends grunt to allow you to overwrite your grunt config options by
 
 
 ## Usage example
-After you add grunt-cli-config to your package.json or use `npm install grunt-cli-config`, require the plugin passing the grunt as a parameter before invoking its apply method
+After you add grunt-cli-config to your package.json or use `npm install grunt-cli-config`, load the plugin before you invoke its applyCliConfig method
 ```
-require('grunt-cli-config')(grunt);
+grunt.loadNpmTasks('grunt-cli-config');
 ```
 
 Then, on a grunt task call
