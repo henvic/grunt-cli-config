@@ -1,7 +1,7 @@
 {
     "name": "grunt-cli-config",
     "description": "Set the config with the options passed on the CLI.",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "homepage": "https://github.com/henvic/grunt-cli-config",
     "author": {
         "name": "Henrique Vicente",
@@ -30,6 +30,7 @@
         "coveralls": "node_modules/jscoverage/bin/jscoverage tasks && GRUNT_CLI_CONFIG_CODE_COVERAGE=1 nodeunit --reporter=lcov test | node_modules/coveralls/bin/coveralls.js"
     },
     "devDependencies": {
+        "grunt-bump": "0.0.13",
         "grunt-contrib-jshint": "^0.10.0",
         "grunt-contrib-copy": "^0.5.0",
         "grunt-contrib-nodeunit": "^0.3.3",
