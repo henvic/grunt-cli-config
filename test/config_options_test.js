@@ -1,7 +1,7 @@
 'use strict';
 
 var grunt = require('grunt'),
-    configOptions = require(process.cwd() + '/tasks/config_options')(grunt),
+    configOptions = require(__dirname + '/../tasks/config_options')(grunt),
     originalFlags;
 
 exports.config_options = {
