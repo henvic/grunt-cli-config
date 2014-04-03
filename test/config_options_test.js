@@ -45,11 +45,10 @@ exports.config_options = {
             any : 'param'
         });
 
-        grunt.applyCliConfig(function verify() {
-            actual = grunt.config('any');
-            test.strictEqual(actual, expected, 'Verifying --any=param');
-            test.done();
-        });
+        grunt.applyCliConfig();
+        actual = grunt.config('any');
+        test.strictEqual(actual, expected, 'Verifying --any=param');
+        test.done();
     },
     boolean: function booleanTest(test) {
         var expected = true,
@@ -59,11 +58,10 @@ exports.config_options = {
             other : true
         });
 
-        grunt.applyCliConfig(function verify() {
-            actual = grunt.config('other');
-            test.strictEqual(actual, expected, 'Verifying --other');
-            test.done();
-        });
+        grunt.applyCliConfig();
+        actual = grunt.config('other');
+        test.strictEqual(actual, expected, 'Verifying --other');
+        test.done();
     },
     negative: function negativeTest(test) {
         var expected = false,
@@ -74,10 +72,9 @@ exports.config_options = {
             crop: false
         });
 
-        grunt.applyCliConfig(function verify() {
-            actual = grunt.config('crop');
-            test.strictEqual(actual, expected, 'Verifying negative boolean');
-            test.done();
-        });
+        grunt.applyCliConfig();
+        actual = grunt.config('crop');
+        test.strictEqual(actual, expected, 'Verifying negative boolean');
+        test.done();
     }
 };

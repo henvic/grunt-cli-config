@@ -12,14 +12,13 @@ grunt.loadNpmTasks('grunt-cli-config');
 
 Then, on a grunt task call
 ```
-var callback = undefined,
-    task = 'test';
+var task = 'test',
+    subTask = 'foo';
 
-grunt.applyCliConfig(callback, task, ...);
+// e.g., grunt.applyCliConfig('build', 'calendar', 'gregorian');
+grunt.applyCliConfig(task, subTask);
 
 ```
-The callback takes no parameters and is called at the end of the method, if defined.
-
 There's a arbitrary number of arguments you can pass to the applyCliConfig method and they should be interpreted as sub-levels of the config options.
 
 On the CLI you can invoke commands like

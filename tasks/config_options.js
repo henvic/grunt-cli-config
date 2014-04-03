@@ -42,11 +42,10 @@ module.exports = function exports(grunt) {
 
     /**
      * Apply the cli configs to the receiving task / subTask
-     * e.g., grunt.applyCliConfig(callback, task, subTask,,);
-     * @param callback
+     * e.g., grunt.applyCliConfig(task, subTask);
      * @param task
      */
-    grunt.applyCliConfig = function apply(callback) {
+    grunt.applyCliConfig = function apply() {
         var options = grunt.option.flags(),
             params = [].slice.call(arguments);
 
@@ -60,10 +59,6 @@ module.exports = function exports(grunt) {
 
             grunt.config(key, choice.value);
         });
-
-        if (callback) {
-            callback();
-        }
     };
 
     exports.normalize = normalize;
