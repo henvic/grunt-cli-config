@@ -1,5 +1,5 @@
 /*
- * grunt-config-options
+ * grunt-cli-config
  * https://github.com/henvic/grunt-cli-config
  *
  * Copyright (c) 2014 Henrique Vicente
