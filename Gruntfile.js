@@ -13,6 +13,7 @@ module.exports = function exports(grunt) {
         jshint: {
             all: [
                 'Gruntfile.js',
+                'index.js',
                 'tasks/*.js',
                 '<%= nodeunit.tests %>'
             ],
@@ -25,7 +26,7 @@ module.exports = function exports(grunt) {
         },
         complexity: {
             generic: {
-                src: ['Gruntfile.js', 'tasks/config_options.js'],
+                src: ['Gruntfile.js', 'index.js', 'tasks/*.js'],
                 options: {
                     breakOnErrors: true,
                     errorsOnly: false,
